@@ -15,6 +15,9 @@ class AuthSampleController extends Controller
     public function display_user_info()
     {
         $user = Auth::User();
+
+        dd($user);
+
         return (view('display_user_info', ['user' => $user]));
     }
 
